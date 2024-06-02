@@ -1,0 +1,12 @@
+
+
+spring.datasource.url= jdbc:postgresql://localhost:5432/testdb2
+spring.datasource.username= postgres
+spring.datasource.password= k52weapon
+
+https://github.com/bezkoder/node-js-postgresql-crud-example
+
+https://www.bezkoder.com/node-express-sequelize-postgresql/
+
+
+npm install express sequelize pg pg-hstore cors --save

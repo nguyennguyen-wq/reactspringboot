@@ -1,0 +1,102 @@
+
+
+
+https://www.bezkoder.com/react-node-express-postgresql/
+
+https://www.bezkoder.com/react-pagination-material-ui/#React_Pagination_using_Material-UI
+
+https://www.bezkoder.com/react-spring-boot-pagination/#Full-stack_Architecture
+
+https://www.newline.co/@kchan/how-to-fix-the-error-errorerror0308010cdigital-envelope-routinesunsupported--0f8d3f17
+
+For Windows, run the following command before running anything else:
+
+$ set NODE_OPTIONS=--openssl-legacy-provider
+
+
+username   postgres
+
+k52weapon
+
+
+
+testdb2
+
+
+https://stackoverflow.com/questions/72866798/error-message-node-openssl-legacy-provider-is-not-allowed-in-node-options
+
+Add or edit the .npmrc file in your project folder and add the option:
+node-options="--openssl-legacy-provider"
+
+A Simple way through NPM.
+We can set the SSL legacy option in the .npmrc file.
+
+In my case Node.JS v18 with npm v9.
+
+Add or edit the .npmrc file in your project folder and add the option:
+node-options="--openssl-legacy-provider"
+
+Advantages:
+It can be managed per project
+The .npmrc file in the project will remind us that the project needs to be updated.
+If that appears in another project on the server we will still have the error.
+
+
+For me unsetting NODE_OPTIONS alone didn't solve the problem. I had to use
+
+nvm use v18
+to solve the issue.
+
+
+Just run this command
+unset NODE_OPTIONS
+
+
+
+This problem appeared after an update, sudo apt upgrade, on Ubuntu 20.04 (Focal Fossa).
+
+Previously, I worked on versions Node.js v18.0.0 and npm 8.7.0, but after the update there was a problem. I ran command nvm install node --reinstall-packages-from=node, but it did not help.
+
+Now I use npm v8.12.1 and Node.js v18.4.0.
+
+When running the command npm start, I receive the message:
+
+> mini-app@0.0.0 start
+> cross-env PORT=10888 HTTPS=false react-scripts start --openssl-legacy-provider
+
+node: --openssl-legacy-provider is not allowed in NODE_OPTIONS
+part of a file, package.json, looks like this :
+
+ "scripts": {
+    "start": "cross-env PORT=10888 HTTPS=false react-scripts start --openssl-legacy-provider",
+    "build": "react-scripts build",
+    "predeploy": "npm run build",
+    "deploy": "vk-miniapps-deploy",
+    "tunnel": "vk-tunnel --insecure=1 --http-protocol=https --ws-protocol=wss --host=localhost --port=10888"
+  },
+
+
+
+
+
+
+
+C:\Users\QUOCTUAN\Downloads\react-pagination-material-ui-master\react-pagination-material-ui-master
+C:\Users\QUOCTUAN\Downloads\react-pagination-material-ui-master\react-pagination-material-ui-master
+
+How does Spring pageable work?
+In Spring Data, if we need to return a few results from the complete data set, 
+we can use any Pageable repository method, as it will always return a Page. 
+The results will be returned based on the page number, page size, and sorting direction.22. jul. 2022
+
+
+A page is a sublist of a list of objects. It allows gain information about the position of it in the containing entire list.
+
+
+
+https://learn.microsoft.com/en-us/ef/ef6/modeling/code-first/workflows/new-database?source=recommendations
+https://learn.microsoft.com/en-us/ef/ef6/modeling/code-first/workflows/new-database?source=recommendations
+
+
+
+
